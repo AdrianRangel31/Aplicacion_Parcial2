@@ -13,10 +13,6 @@ export default function ExampleEvents({ navigation, route }) {
   const { nombre } = route.params;
   const total = route.params?.total;
 
-  const handlePress = () => {
-    Alert.alert("Botón presionado");
-  };
-
   const handleShowData = () => {
     let textAlert;
     if (total === undefined) {
@@ -29,16 +25,16 @@ export default function ExampleEvents({ navigation, route }) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>texto descriptivo</Text>
+      <Text style={styles.text}>Esta página recibe parametros y se muestran con el evento al presionar el botón</Text>
       <TouchableOpacity onPress={handleShowData} style={styles.btn}>
         <Text style={styles.btnText}>Mostrar datos en alert</Text>
       </TouchableOpacity>
 
       <TouchableOpacity
         onPress={() => navigation.popToTop("Home")}
-        style={styles.btn}
+        style={styles.btnHome}
       >
-        <Text style={styles.btnText}>Volver a home</Text>
+        <Text style={styles.btnHomeText}>Volver a home</Text>
       </TouchableOpacity>
 
       {total !== undefined && (
@@ -56,6 +52,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#70b2f0",
     justifyContent: "flex-start",
     padding: 20,
+    alignItems: "center"
   },
   title: {
     fontSize: 50,
@@ -73,8 +70,6 @@ const styles = StyleSheet.create({
   },
   btn: {
     backgroundColor: "#426025",
-    width: 200,
-    marginLeft: 25,
     borderRadius: 40,
     width: 300,
     marginBottom: 20,
@@ -97,7 +92,6 @@ const styles = StyleSheet.create({
     borderRadius: 40,
     textAlign: "center",
     width: 200,
-    marginLeft: 70,
     marginBottom: 10,
   },
   data: {
@@ -106,7 +100,19 @@ const styles = StyleSheet.create({
     borderRadius: 40,
     textAlign: "center",
     width: 250,
-    marginLeft: 50,
     marginBottom: 10,
+  },
+  btnHome: {
+    backgroundColor: "#606025",
+    width: 200,
+    borderRadius: 40,
+    marginBottom: 20,
+  },
+  btnHomeText: {
+    fontSize: 30,
+    textAlign: "center",
+    backgroundColor: "#ccda52",
+    margin: 10,
+    borderRadius: 40,
   },
 });

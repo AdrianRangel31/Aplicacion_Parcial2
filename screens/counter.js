@@ -43,9 +43,9 @@ export default function Counter({ navigation, route }) {
 
       <TouchableOpacity
         onPress={() => navigation.popToTop("Home")}
-        style={styles.btn}
+        style={styles.btnHome}
       >
-        <Text style={styles.btnText}>Volver a home</Text>
+        <Text style={styles.btnHomeText}>Volver a home</Text>
       </TouchableOpacity>
     </View>
   );
@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     padding: 24,
     backgroundColor: "#ffff",
+    alignItems:"center"
   },
   title: { fontSize: 24, fontWeight: "700", marginBottom: 12 },
   value: { fontSize: 48, fontWeight: "800", marginBottom: 8 },
@@ -64,15 +65,29 @@ const styles = StyleSheet.create({
   btn: {
     backgroundColor: "#154c9e",
     width: 200,
-    marginLeft: 75,
     borderRadius: 25,
     marginTop: 30,
   },
   btnText: {
     fontSize: 30,
     textAlign: "center",
-    backgroundColor: "#d2d5d8",
+    backgroundColor: "#94da52",
     margin: 10,
     borderRadius: 25,
+  },
+  btnHome: {
+    backgroundColor: "#606025",
+    width: 200,
+    borderRadius: 40,
+    marginBottom: 20,
+        marginTop: 10
+  },
+  btnHomeText: {
+    fontSize: 30,
+    textAlign: "center",
+    backgroundColor: "#ccda52",
+    margin: 10,
+    borderRadius: 40,
+
   },
 });

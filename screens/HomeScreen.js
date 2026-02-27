@@ -1,7 +1,6 @@
 import { View, Text, StyleSheet, Image, TouchableOpacity,ScrollView } from "react-native";
 
 export default function HomeScreen({ navigation }) {
-  const handlePress = () => {};
   const nombre = "Adrián"
 
   return (
@@ -12,7 +11,7 @@ export default function HomeScreen({ navigation }) {
         <Text style={styles.title}>E-commerce App</Text>
         <Text style={styles.subtitle}> Mi app sera para comprar ropa </Text>
         <Text style={styles.subtitle}>
-          Luis Adrián Rangel Vázquez {"\n"} 5°B BIS
+          Luis Adrián Rangel Vázquez {"\n"}Tecnologías de la información{"\n"}5°B BIS
         </Text>
         <Image source={require("../assets/uwu.png")} style={styles.michi} />
 

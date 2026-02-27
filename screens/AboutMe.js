@@ -9,7 +9,7 @@ export default function AboutMe({ navigation }) {
       contentContainerStyle={styles.container}
     >
       <View style={styles.content}>
-        <Text style={styles.subtitle}>Texto descriptivo</Text>
+        <Text style={styles.subtitle}>Presione un bóton para ver aspectos del desarrollador</Text>
         <TouchableOpacity
           onPress={() =>
             navigation.navigate("FavFood")

@@ -3,9 +3,6 @@ import {
   Text,
   StyleSheet,
   Image,
-  Button,
-  Alert,
-  Touchable,
   TouchableOpacity,
   ScrollView,
 } from "react-native";
@@ -15,28 +12,29 @@ export default function FavMov({ navigation }) {
     <>
       <ScrollView contentContainerStyle={styles.container}>
         <View style={styles.content}>
+          <Text style={styles.text}>Mi top 3 de peliculas favoritas</Text>
           <View style={styles.foodContainer}>
             <Image
-              source={require("../assets/quesabirria.png")}
+              source={require("../assets/spider.png")}
               style={styles.foodImg}
             />
-            <Text style={styles.text}>Quesabirrias</Text>
+            <Text style={styles.text}>Spiderman Across The Spider-Verse</Text>
           </View>
 
           <View style={styles.foodContainer}>
             <Image
-              source={require("../assets/sushi.png")}
+              source={require("../assets/batman.png")}
               style={styles.foodImg}
             />
-            <Text style={styles.text}>Quesabirrias</Text>
+            <Text style={styles.text}>The Batman</Text>
           </View>
 
           <View style={styles.foodContainer}>
             <Image
-              source={require("../assets/chilaquil.png")}
+              source={require("../assets/your.png")}
               style={styles.foodImg}
             />
-            <Text style={styles.text} >Quesabirrias</Text>
+            <Text style={styles.text}>Your Name</Text>
           </View>
         </View>
       </ScrollView>
@@ -60,7 +58,7 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start",
     alignItems: "center",
     padding: 20,
-    marginBottom:70
+    marginBottom: 70,
   },
   title: {
     fontSize: 50,
@@ -76,9 +74,9 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   btn: {
-    position: 'absolute',
-    bottom:15,
-    right:46.5,
+    position: "absolute",
+    bottom: 15,
+    right: 46.5,
     backgroundColor: "#606025",
     width: 201,
     borderRadius: 40,
@@ -105,6 +103,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     width: 200,
     marginBottom: 10,
+    padding: 4,
   },
   data: {
     fontSize: 25,
