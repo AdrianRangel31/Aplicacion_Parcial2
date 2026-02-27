@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#ffff",
     borderRadius: 40,
     textAlign: "center",
-    width: 200,
+    width: 300,
     marginBottom: 10,
   },
   data: {

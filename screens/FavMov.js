@@ -104,6 +104,7 @@ const styles = StyleSheet.create({
     width: 200,
     marginBottom: 10,
     padding: 4,
+    width:250
   },
   data: {
     fontSize: 25,

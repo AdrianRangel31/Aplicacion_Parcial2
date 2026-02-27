@@ -104,7 +104,8 @@ const styles = StyleSheet.create({
     textAlign: "center",
     width: 200,
     marginBottom: 10,
-    padding: 4
+    padding: 4,
+    width:250
   },
   data: {
     fontSize: 25,
