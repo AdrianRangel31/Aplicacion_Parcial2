@@ -9,7 +9,6 @@ export default function AboutMe({ navigation }) {
       contentContainerStyle={styles.container}
     >
       <View style={styles.content}>
-        <Text style={styles.title}>About Me</Text>
         <Text style={styles.subtitle}>Texto descriptivo</Text>
         <TouchableOpacity
           onPress={() =>

@@ -29,7 +29,6 @@ export default function ExampleEvents({ navigation, route }) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Ejemplo de eventos</Text>
       <Text style={styles.text}>texto descriptivo</Text>
       <TouchableOpacity onPress={handleShowData} style={styles.btn}>
         <Text style={styles.btnText}>Mostrar datos en alert</Text>
